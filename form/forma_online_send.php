@@ -1,0 +1,1 @@
+﻿<?		$txt = "<b>1. Имя:</b> ".$_GET['name']."<br><b>2. Телефон:</b> ".$_GET['phone']."<br><b>3. E-mail:</b> ".$_GET['email']."<br><b>4. Сообщение:</b><br>".$_GET['message'];if(mail('info@delo-vk.ru', 'delo-vk.ru - Получено новое сообщение с сайта ['.date("Y-m-d H:i:s").']', $txt, "Content-type: text/html; charset=utf-8\r\n")) return true; else return false;?>
